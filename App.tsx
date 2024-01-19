@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Home1 } from "./screens/Home1";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Piano } from "./screens/Piano";
+import { SixtySeconds } from "./screens/SixtySeconds";
 
 const Tab = createBottomTabNavigator();
 
@@ -43,6 +44,7 @@ export default function App() {
       <Drawer.Navigator>
         <Drawer.Screen name="Tabs" component={Tabs} />
         <Drawer.Screen name="Piano" component={Piano} />
+        <Drawer.Screen name="SixtySeconds" component={SixtySeconds} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
