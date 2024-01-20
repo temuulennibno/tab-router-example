@@ -11,9 +11,14 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "Allow $(PRODUCT_NAME) to access your device motion."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +42,17 @@
           "motionPermission": "Allow $(PRODUCT_NAME) to access your device motion."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5f30118b-c424-4fb9-a984-d6d2be948561"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5f30118b-c424-4fb9-a984-d6d2be948561"
+    }
   }
 }
